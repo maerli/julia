@@ -2,6 +2,8 @@
 #monte carlo method module
 #https://www.ime.usp.br/~viviane/MAP2212/integralmc.pdf
 
+#calculating PI with Monte Carlos Method
+
 function monte_carlo(f,a,b,N=10)
 	ds = rand(N,1) *(b-a)
 	xs = [a + d for d in ds]
